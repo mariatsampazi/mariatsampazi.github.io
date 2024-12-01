@@ -92,9 +92,9 @@
             background: #cce7ff;
         }
 
-      /* Responsive Design */
-@media (max-width: 600px) {
-    #about {
+        /* Responsive Design */
+        @media (max-width: 600px) {
+             #about {
         flex-direction: column; /* Stack image and text vertically */
         align-items: center; /* Center align for better appearance */
     }
@@ -104,28 +104,30 @@
     #about div {
         text-align: center; /* Center-align text for better readability */
     }
-}
+    
+            header nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
            /* About Section Styles */
-       #about {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-}
-#about img {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    max-width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-#about div {
-    flex: 1; /* Make the text container flexible */
-    min-width: 250px; /* Ensure the text container doesn't get too narrow */
-}
+        #about {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically align items */
+            gap: 20px; /* Add space between the image and text */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #about img {
+            flex-shrink: 0; /* Prevent the image from shrinking */
+            max-width: 150px; /* Set the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Round the corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for aesthetics */
+        }
             
 
         /* About Section Styles 
