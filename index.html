@@ -103,19 +103,24 @@
         }
            /* About Section Styles */
         #about {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically align items */
+            gap: 20px; /* Add space between the image and text */
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            overflow: hidden; /* Clears floated content if necessary */
         }
         #about img {
-            float: left; /* Float the image to the left */
-            max-width: 150px;
-            height: auto;
-            margin: 0 20px 20px 0; /* Add spacing around the image */
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0; /* Prevent the image from shrinking */
+            max-width: 150px; /* Set the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Round the corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for aesthetics */
         }
+        #about div {
+            flex: 1; /* Allow the text to take up remaining space */
+        }       
+
         /* About Section Styles 
         #about {
             display: flex;
@@ -164,7 +169,7 @@
     <main>
         <section id="about">
             <img src="profile.jpg" alt="Maria Tsampazi">
-            <!-- <div> -->
+            <div> 
                 <h2>About Me</h2>
                 <p>Maria Tsampazi holds a MEng (’21) in ECE
                 from National Technical University of Athens,
@@ -177,7 +182,7 @@
                 of the National Spectrum Consortium Women
                 in Spectrum Scholarship. She has previously collaborated with both
                 government and industry, including organizations such as the U.S. Department of Transportation and Dell Technologies.</p>
-           <!--  </div> -->
+           </div> 
         </section>
        <section id="projects">
     <h2>Publications</h2>
