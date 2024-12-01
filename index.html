@@ -16,6 +16,7 @@
             padding: 0;
             background-color: #f8f9fa; /* Softer light gray */
             color: #333; /* Subtle dark gray for text */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         header {
             background: #dfefff; /* Subtle light blue */
@@ -45,6 +46,7 @@
         /* About Section */
         #about {
             display: flex;
+            flex-wrap: wrap; 
             align-items: flex-start;
             gap: 20px;
             background: white; /* White for clean contrast */
@@ -54,6 +56,7 @@
         }
         #about img {
             width: 200px;
+            max-width: 200px; /* Restricts size for smaller screens */
             height: auto;
             border-radius: 10px; /* Adds slightly rounded corners */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -66,6 +69,7 @@
         section h2 {
             color: #000; /* Black for the titles */
             margin-top: 0;
+            font-size: 1.5rem;
         }
 
         /* Publications Section */
@@ -105,6 +109,35 @@
             color: #333; /* Dark text for contrast */
             margin-top: 20px;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem; /* Smaller heading for small screens */
+                word-wrap: break-word; 
+            }
+            header nav {
+                display: flex;
+                flex-direction: column; /* Stack navigation links */
+                align-items: center;
+            }
+            header nav a {
+                display: block; /* Vertical links */
+                margin: 5px 0;
+                padding: 10px 5px; /* Increase click area */
+            }
+            #about {
+                flex-direction: column; /* Stack content vertically */
+                align-items: center;
+                text-align: center;
+            }
+            #about img {
+                max-width: 150px; /* Resize image for smaller screens */
+            }
+            section h2 {
+                font-size: 1.3rem; /* Smaller section titles */
+            }
         }
 
     </style>
