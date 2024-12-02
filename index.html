@@ -94,23 +94,23 @@
 
         /* Responsive Design */
         @media (max-width: 600px) {
-             #about {
+        #about {
         flex-direction: column; /* Stack image and text vertically */
         align-items: center; /* Center align for better appearance */
-    }
-    #about img {
-        margin-bottom: 20px; /* Add spacing below the image */
-    }
-    #about div {
-        text-align: center; /* Center-align text for better readability */
-    }
-    
-            header nav {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-            }
+        }
+        #about img {
+            margin-bottom: 20px; /* Add spacing below the image */
+        }
+        #about div {
+            text-align: center; /* Center-align text for better readability */
+        }
+
+        header nav {
+            display: none;
+        }
+        .hamburger {
+            display: flex;
+        }
         }
            /* About Section Styles */
         #about {
@@ -154,7 +154,9 @@
 </head>
 <body>
     <header>
-        <h1>Maria Tsampazi</h1>
+        <h1>Maria Tsampazi
+        <img src="logo.png" alt="Logo" style="max-height: 40px; margin-left: 10px;">
+        </h1>
         <div class="hamburger" onclick="toggleMobileNav()">
             <div></div>
             <div></div>
@@ -288,7 +290,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Maria Tsampazi</p>
+        <p>&copy; 2024</p>
     </footer>
 
     <script>
