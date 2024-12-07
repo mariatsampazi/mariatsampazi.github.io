@@ -92,6 +92,19 @@
             background: #cce7ff;
         }
 
+        .header {
+        display: flex;
+        align-items: center; /* Vertically centers the content */
+        justify-content: space-between; /* Ensures spacing between left, center, and right elements */
+        padding: 10px;
+        background-color: #eaf4ff; /* Adjust this based on the background color */
+        }
+
+        .header .quote {
+        text-align: center;
+        flex: 1; /* Allows the quote to take up equal space */
+        }
+
         /* Responsive Design */
         @media (max-width: 600px) {
         #about {
@@ -163,9 +176,9 @@
 
         <!-- Centered name -->
         <h1 style="margin: 0; font-size: 24px;">Maria Tsampazi</h1>
-<div style="position: absolute; right: 20px; top: 20px; font-style: italic; font-size:14px;">
-    “The secret of happiness is freedom, and the secret of freedom is courage.” —Thucydides
-</div>
+<div class="quote">
+    <p>“The secret of happiness is freedom, and the secret of freedom is courage.” —Thucydides</p>
+  </div>
 
 
     </div>
