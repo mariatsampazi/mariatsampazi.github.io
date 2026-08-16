@@ -119,23 +119,53 @@
             margin-bottom: 20px;
         }
 
-        /* Experience Styles */
+        /* Experience Styles - timeline layout */
+        .experience-timeline {
+            position: relative;
+            margin-left: 90px;
+            padding-left: 30px;
+            border-left: 3px solid #4285F4;
+        }
         .experience-item {
+            position: relative;
             background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 10px 14px;
+            margin-bottom: 12px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid #4285F4;
+            max-width: 500px;
+        }
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 18px;
+            width: 12px;
+            height: 12px;
+            background: #4285F4;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px #fff;
+        }
+        .experience-item .timeline-date {
+            position: absolute;
+            left: -145px;
+            top: 16px;
+            width: 105px;
+            text-align: right;
+            font-size: 0.85em;
+            color: #4285F4;
+            font-weight: bold;
+            line-height: 1.3;
         }
         .experience-item h3 {
             color: #333;
-            margin-bottom: 5px;
-            font-size: 1.2em;
+            margin: 0 0 3px 0;
+            font-size: 1em;
         }
         .experience-item p {
-            margin: 5px 0;
+            margin: 2px 0;
             color: #666;
+            font-size: 0.88em;
         }
         .experience-item p strong {
             color: #333;
@@ -159,6 +189,20 @@
         }
         .hamburger {
             display: flex;
+        }
+        .experience-timeline {
+            margin-left: 15px;
+            padding-left: 20px;
+        }
+        .experience-item .timeline-date {
+            position: static;
+            width: auto;
+            text-align: left;
+            margin-bottom: 4px;
+            display: block;
+        }
+        .experience-item::before {
+            left: -28px;
         }
         }
            /* About Section Styles */
@@ -239,33 +283,34 @@
         <section id="experience">
             <h2>Experience</h2>
 
-            <div class="experience-item">
-                <h3>Scientific Project Manager/Researcher</h3>
-                <p><strong>I-SENSE Group, Institute of Communication and Computer Systems (ICCS),<br>National Technical University of Athens</strong></p>
-                <p>Jul 2026 – Present</p>
-                <p>Athens, Greece</p>
-            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <span class="timeline-date">Jul 2026 –<br>Present</span>
+                    <h3>Scientific Project Manager/Researcher</h3>
+                    <p><strong>I-SENSE Group, Institute of Communication and Computer Systems (ICCS)<br>National Technical University of Athens</strong></p>
+                    <p>Athens, Greece</p>
+                </div>
 
-            <div class="experience-item">
-                <h3>PhD Candidate & Research Assistant</h3>
-                <p><strong>Institute for Intelligent Networked Systems (INSI)</strong></p>
-                <p>Sep 2021 – June 2026</p>
-                <p>Boston, Massachusetts, United States</p>
-            </div>
+                <div class="experience-item">
+                    <span class="timeline-date">Sep 2021 –<br>Jun 2026</span>
+                    <h3>PhD Candidate & Research Assistant</h3>
+                    <p><strong>Institute for Intelligent Networked Systems (INSI)</strong></p>
+                    <p>Boston, Massachusetts, United States</p>
+                </div>
 
-            <div class="experience-item">
-                <h3>Nokia Research and Technology</h3>
-                <p><strong>Nokia</strong></p>
-                <p>Jun 2025 – Aug 2025</p>
-                <p>Greater Chicago Area, United States</p>
-            </div>
-            
-            
-            <div class="experience-item">
-                <h3>Undergraduate Research Assistant</h3>
-                <p><strong>National Technical University of Athens</strong></p>
-                <p>Nov 2020 – May 2021</p>
-                <p>Athens, Greece</p>
+                <div class="experience-item">
+                    <span class="timeline-date">Jun 2025 –<br>Aug 2025</span>
+                    <h3>Nokia Research and Technology</h3>
+                    <p><strong>Nokia</strong></p>
+                    <p>Greater Chicago Area, United States</p>
+                </div>
+
+                <div class="experience-item">
+                    <span class="timeline-date">Nov 2020 –<br>May 2021</span>
+                    <h3>Undergraduate Research Assistant</h3>
+                    <p><strong>National Technical University of Athens</strong></p>
+                    <p>Athens, Greece</p>
+                </div>
             </div>
         </section>
 
